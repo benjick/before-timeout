@@ -1,0 +1,45 @@
+{
+  "name": "before-timeout",
+  "version": "1.0.0",
+  "description": "Creates a race between a promise and a timeout",
+  "main": "dist/before-timeout.js",
+  "module": "dist/before-timeout.mjs",
+  "jsnext:main": "dist/before-timeout.mjs",
+  "scripts": {
+    "prebuild": "eslint lib",
+    "build": "rollup -c --environment BUILD:production",
+    "watch": "rollup -c -w",
+    "pretest": "rollup -c",
+    "test": "jest",
+    "prepublish": "npm test"
+  },
+  "repository": "benjick/before-timeout",
+  "keywords": [
+    "promise",
+    "timeout"
+  ],
+  "author": "Max Malm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjick/before-timeout/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/benjick/before-timeout#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "babelrc-rollup": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-benjick": "^1.0.1",
+    "jest": "^20.0.4",
+    "rollup": "^0.37.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-istanbul": "^1.1.0",
+    "rollup-watch": "^2.5.0"
+  }
+}
